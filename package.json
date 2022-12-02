@@ -7,7 +7,7 @@
   "author": "Marlene <1677568218@qq.com>",
   "scripts": {
     "dev": "vite --port 3333 --open ",
-    "dev:app": "python app\\main.py --port 3333 --dev 'True'",
+    "dev:app": "python app\\main.py --port 3333 --dev True",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
