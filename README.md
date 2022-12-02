@@ -235,3 +235,7 @@ window.evaluate_js(code, callback=None)允许您使用同步返回的最后一�
 
 - 通过将 Python 类的实例暴露给 create_window 的 js_api。该类的所有可调用方法都将以 pywebview.api.method_name 的形式公开到 JS 域中。方法名称不得以下划线开头。
 - 通过将函数传递给窗口对象的 expose(func)这将以 pywebview.api.func_name 的形式将一个或多个函数公开到 JS 域。与 JS API 不同，expose 也允许在运行时公开函数。如果 JS API 和以这种方式公开的函数之间存在名称冲突，则后者优先。
+
+## THX
+
+- [vue-pywebview-pyinstaller](https://github.com/pangao1990/vue-pywebview-pyinstaller)
