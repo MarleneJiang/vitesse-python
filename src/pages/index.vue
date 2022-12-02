@@ -11,6 +11,20 @@ const go = () => {
     router.push(`/hi/${encodeURIComponent(name)}`)
 }
 
+const pythonName = ref('')
+const getOwner = async () => {
+  pythonName.value = await window.pywebview.api.getOwner() // 前端调用Python暴露的方法
+}
+getOwner()
+
+const pythonData = ref('')
+
+const getPythonData = () => {
+  pythonData.value = 'Python调用了此方法'
+}
+
+window.getPythonData = getPythonData // 暴露方法给Python调用
+
 const { t } = useI18n()
 </script>
 
@@ -29,11 +43,14 @@ const { t } = useI18n()
     </p>
 
     <div py-4 />
+    <div>{{ pythonData }}</div>
+    <div py-4 />
 
     <Input
       v-model="name"
       placeholder="What's your name?"
       autocomplete="false"
+      :value="pythonName"
       @keydown.enter="go"
     />
     <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>

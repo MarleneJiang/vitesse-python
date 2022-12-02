@@ -1,18 +1,28 @@
 {
+  "name": "vitesse-python",
   "type": "module",
   "private": true,
   "packageManager": "pnpm@7.8.0",
+  "description": "基于vitesse,pywebview的python桌面应用",
+  "author": "Marlene <1677568218@qq.com>",
   "scripts": {
-    "build": "vite-ssg build",
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --port 3333 --open ",
+    "dev:app": "E:/anaconda/envs/pytorch/python.exe app\\main.py --port 3333 --dev 'True'",
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
-    "test": "vitest",
-    "test:e2e": "cypress open",
-    "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "up": "taze major -I"
+    "up": "taze major -I",
+    "inits": "pnpm install && run-script-os",
+    "inits:windows": "E:/anaconda/envs/pytorch/python.exe app\\spec\\getSpec.py && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r .\\app\\assets\\requirements.txt",
+    "start": "vite build && run-script-os",
+    "start:windows": "E:/anaconda/envs/pytorch/python.exe -X dev .\\app\\main.py",
+    "pre": "shx rm -rf build && vite build && run-script-os",
+    "pre:windows": "pyinstaller --clean .\\app\\spec\\windows-pre.spec",
+    "pre:folder": "shx rm -rf build && vite build && pyinstaller --clean .\\app\\spec\\windows-folder-pre.spec",
+    "build": "shx rm -rf build && vite build && run-script-os",
+    "build:windows": "pyinstaller -w --clean .\\app\\spec\\windows.spec",
+    "build:folder": "shx rm -rf build && vite build && pyinstaller --clean .\\app\\spec\\windows-folder.spec"
   },
   "dependencies": {
     "@unocss/reset": "^0.46.5",
@@ -20,6 +30,8 @@
     "@vueuse/head": "^1.0.18",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.25",
+    "run-script-os": "^1.1.6",
+    "shx": "^0.3.4",
     "vue": "^3.2.45",
     "vue-demi": "^0.13.11",
     "vue-i18n": "^9.2.2",
@@ -36,9 +48,7 @@
     "@vue/test-utils": "^2.2.4",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "cypress": "^11.1.0",
     "eslint": "^8.28.0",
-    "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.1",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-shiki": "^0.6.1",
@@ -59,7 +69,20 @@
     "vite-plugin-vue-markdown": "^0.22.1",
     "vite-ssg": "^0.22.0",
     "vite-ssg-sitemap": "^0.4.3",
-    "vitest": "^0.25.2",
     "vue-tsc": "^1.0.9"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarleneJiang/vitesse-python.git"
+  },
+  "keywords": [
+    "qt5"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarleneJiang/vitesse-python/issues"
+  },
+  "homepage": "https://github.com/MarleneJiang/vitesse-python#readme"
 }

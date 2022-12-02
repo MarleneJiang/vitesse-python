@@ -1,6 +1,4 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/154486817-f86b8f20-5463-4122-b6e9-930622e757f2.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
+<h1 align='center'>Vitesse-Python</h1>
 
 <p align='center'>
 Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
@@ -8,19 +6,42 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 <br>
 
-<p align='center'>
-<a href="https://vitesse.netlify.app/">Live Demo</a>
-</p>
 
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse/blob/main/README.zh-CN.md">简体中文</a>
+<b>简体中文</b> | <a href="">English</a>
 <!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
 </p>
 
 <br>
 
+## Introduction
+
+### 👀 `Vitesse-Python` 
+
+- Vitesse-Python 帮助您构建 windows 平台客户端的应用，不再受pyqt的困扰。
+- Vitesse-Python 的视图层采用 HTML+JS+CSS，业务层采用本地 Python。
+- Vitesse-Python 采用了 Vite 的开发模式，支持热更新，开发体验更佳。
+- Vitesse-Python 采用了 PyInstaller 打包，支持 windows 平台，打包体积更小。
+- Vitesse-Python 采用了 pywebview 作为渲染引擎，支持 windows 平台，渲染速度更快。
+- Vitesse-Python 采用了 Vue3、Vitesse 作为前端框架，代码编写更优雅从容。
+
+### 📦 适用场景
+
+- 对软件的用户界面有一定美感要求
+- 需要用到 Python 中的人工智能等模块
+- 考虑搭建本地应用，使用本机计算和存储资源
+- 对软件功能要求比较高，需要自己开发
+
+### 👨‍💻 适用人群
+
+- 熟悉 Vue3 和 Python 编程的程序员。
+- 熟悉 HTML、CSS、JS 的前端工程师。
+- 熟悉 Python 的数据分析师。
+- 熟悉 Python 的机器学习工程师。
+- 熟悉 Python 的人工智能工程师。
+- 熟悉 Python 的软件工程师。
 
 ## Features
 
@@ -58,160 +79,159 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 - 🦾 TypeScript, of course
 
-- ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
-
 - ☁️ Deploy on Netlify, zero-config
+
+- 🎉 <strong>[Pywebview](https://pywebview.flowrl.com/) inside </strong>
 
 <br>
 
 
-## Pre-packed
-
-### UI Frameworks
-
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-### Icons
-
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-### Plugins
-
-- [Vue Router](https://github.com/vuejs/router)
-  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
-  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - layouts for pages
-- [Pinia](https://pinia.vuejs.org) - Intuitive, type safe, light and flexible Store for Vue using the composition api
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`unplugin-vue-macros`](https://github.com/sxzz/unplugin-vue-macros) - Explore and extend more macros and syntax sugar to Vue.
-- [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) - PWA
-- [`vite-plugin-vue-component-preview`](https://github.com/johnsoncodehk/vite-plugin-vue-component-preview) - Preview single component in VSCode
-- [`vite-plugin-vue-markdown`](https://github.com/antfu/vite-plugin-vue-markdown) - Markdown as components / components in Markdown
-  - [`markdown-it-shiki`](https://github.com/antfu/markdown-it-shiki) - [Shiki](https://github.com/shikijs/shiki) for syntax highlighting
-- [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
-  - [`vite-plugin-vue-i18n`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n) - Vite plugin for Vue I18n
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - Sitemap generator
-- [`@vueuse/head`](https://github.com/vueuse/head) - manipulate document head reactively
-
-### Coding Style
-
-- Use Composition API with [`<script setup>` SFC syntax](https://github.com/vuejs/rfcs/pull/227)
-- [ESLint](https://eslint.org/) with [@antfu/eslint-config](https://github.com/antfu/eslint-config), single quotes, no semi.
-
-### Dev tools
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vitest](https://github.com/vitest-dev/vitest) - Unit testing powered by Vite
-- [Cypress](https://cypress.io/) - E2E testing
-- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
-- [`vite-ssg`](https://github.com/antfu/vite-ssg) - Static-site generation
-  - [critters](https://github.com/GoogleChromeLabs/critters) - Critical CSS
-- [Netlify](https://www.netlify.com/) - zero-config deployment
-- [VS Code Extensions](./.vscode/extensions.json)
-  - [Vite](https://marketplace.visualstudio.com/items?itemName=antfu.vite) - Fire up Vite server automatically
-  - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
-  - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
-  - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-## Variations
-
-As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!
-
-###### Official
-
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse for Nuxt 3
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-###### Community
-
-- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
-- [vitespa](https://github.com/ctholho/vitespa) by [@ctholho](https://github.com/ctholho) - Like Vitesse but without SSG/SSR
-- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17) - Like Vitesse but with TailwindCSS
-- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext) by [@xiaoluoboding](https://github.com/xiaoluoboding) - ⚡️ Modernized Chrome Extension Manifest V3 Vite Starter Template
-- [vitesse-stackter-clean-architect](https://github.com/shamscorner/vitesse-stackter-clean-architect) by [@shamscorner](https://github.com/shamscorner) - A modular clean architecture pattern in vitesse template
-- [vitesse-enterprise](https://github.com/FranciscoKloganB/vitesse-enterprise) by [@FranciscoKloganB](https://github.com/FranciscoKloganB) - Consistent coding styles regardless of team-size.
-- [vitecamp](https://github.com/nekobc1998923/vitecamp) by [@nekobc1998923](https://github.com/nekobc1998923) - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
-- [vitesse-lite-react](https://github.com/lxy-yz/vitesse-lite-react) by [@lxy-yz](https://github.com/lxy-yz) - vitesse-lite React fork
-- [vide](https://github.com/Nico-Mayer/vide) by [@nico-mayer](https://github.com/Nico-Mayer) - Vite superlight Beginner Starter Template
-- [vitesse-h5](https://github.com/YunYouJun/vitesse-h5) by [@YunYouJun](https://github.com/YunYouJun) - Vitesse for Mobile
-- [bat](https://github.com/olgam4/bat) by [@olgam4](https://github.com/olgam4) - Vitesse for SolidJS
-
 ## Try it now!
 
-> Vitesse requires Node >=14.18
+> Vitesse-Python requires Node >=14.18 & Python >=3.7
+
+```bash
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/MarleneJiang/vitesse-python).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+git clone https://github.com/MarleneJiang/vitesse-python.git
+cd vitesse-python
+pnpm inits # If you don't have pnpm installed, run: npm install -g pnpm
 ```
-
-## Checklist
-
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `App.vue`
-- [ ] Change the hostname in `vite.config.ts`
-- [ ] Change the favicon in `public`
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the READMEs and remove routes
-
-And, enjoy :)
 
 ## Usage
 
-### Development
-
-Just run and visit http://localhost:3333
+### 开发前端
 
 ```bash
 pnpm dev
 ```
 
-### Build
+### 开发软件
 
-To build the App, run
+```bash
+pnpm dev:app
+```
+
+### 整体开发
+
+```bash
+pnpm start
+```
+
+### 预打包，带console，方便输出日志信息
+
+```bash
+pnpm pre
+```
+
+### 预打包，带console，生成文件夹，仅win系统
+
+```bash
+pnpm pre:folder
+```
+
+### 正式打包，仅win系统
 
 ```bash
 pnpm build
 ```
 
-And you will see the generated file in `dist` that ready to be served.
-
-### Deploy on Netlify
-
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
-
-### Docker Production Build
-
-First, build the vitesse image by opening the terminal in the project's root directory.
+### 正式打包，生成文件夹，仅win系统
 
 ```bash
-docker buildx build . -t vitesse:latest
+pnpm build:folder
 ```
 
-Run the image and specify port mapping with the `-p` flag.
+## 高级用法
 
-```bash
-docker run --rm -it -p 8080:80 vitesse:latest
+### 客户端引擎介绍
+
+`Vitesse-Python` 基于 [pywebview](https://pywebview.flowrl.com) 构建客户端。而 pywebview 构架构建客户端的原理是利用本地电脑自带的浏览器引擎驱动，模拟生成客户端。本质上还是网页，或者说是一个浏览器，但是感官上和本地客户端没有差别。
+
+那么，基于 pywebview 构架构建客户端的成败或质量，就与本地电脑的浏览器引擎息息相关了。
+
+##### windows 系统
+
+在 windows 系统上，大体上分为两类客户端引擎：正常模式和兼容模式。`Vitesse-Python` 仅支持正常模式。
+
+- 正常模式
+
+正常模式下，按照 edgechromium ，edgehtml， mshtml 的客户端引擎依次检索。如果本地电脑 edge 浏览器支持这些引擎，则客户端可以正常启动。否则，请安装对应的 [EdgeWebView2Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) 浏览器引擎。
+
+- 兼容模式
+
+如果本地电脑 edge 浏览器不支持这些引擎，同时也不想下载 [EdgeWebView2Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) ，那么就可以使用兼容模式。兼容模式的原理就是利用 [CEFPython](https://github.com/cztomczak/cefpython)，嵌入 Chromium 的 Web 浏览器控件。也就是只要本地电脑安装了谷歌浏览器 V66 版及其以上版本，即可正常启动客户端。缺点就是生成的安装包体积会增加大约 60M 左右。
+
+
+### 构建客户端 API
+
+构建客户端的主程序是在 app 文件夹下的 main.py。 
+
+main.py 里面主要是依靠 webview.create_window 和 webview.start 这两个 API 来构建客户端。其他的一些 API，可以直接查看 [pywebview 官网](https://pywebview.flowrl.com/guide/api.html) 了解详情。
+
+#### webview.create_window
+
+```
+webview.create_window(title, url='', html='', js_api=None, width=800, height=600, \
+                      x=None, y=None, resizable=True, fullscreen=False, \
+                      min_size=(200, 100), hidden=False, frameless=False, \
+                      minimized=False, on_top=False, confirm_close=False, \
+                      background_color='#FFF')
 ```
 
-## Why
+创建一个新的 pywebview 窗口，并返回其实例。在开始 GUI 循环之前，窗口不会显示。
 
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
+- **title** 窗口标题
+- **url** 要加载的 URL。如果 URL 没有协议前缀，则将其解析为相对于应用程序入口点的路径。或者，可以传递 WSGI 服务器对象来启动本地 Web 服务器。
+- **html** 要加载的 HTML 代码。如果同时指定了 URL 和 HTML，HTML 优先。
+- **js_api** 将 python 对象暴露到当前 pywebview 窗口的 DOM 中。js_api 对象的方法可以通过调用 window.pywebview.api.<methodname>(<parameters>)从 Javascript 执行。请注意，调用 Javascript 函数会收到一个包含 python 函数的返回值。只有基本的 Python 对象（如 int、str、dict......）才能返回 Javascript。
+- **width** 窗户宽度。默认值为 800px。
+- **height** 窗户高度。默认值为 600px。
+- **x** 窗口 x 坐标。默认值居中。
+- **y** 窗口 y 坐标。默认值居中。
+- **resizable** 是否可以调整窗口大小。默认值为 True
+- **fullscreen** 从全屏模式开始。默认为 False
+- **min_size** 指定最小窗口大小的（宽度、高度）元组。默认值为 200x100
+- **hidden** 默认情况下创建一个隐藏的窗口。默认为 False
+- **frameless** 创建一个无框窗口。默认值为 False。
+- **minimized** 以最小化模式启动
+- **on_top** 将窗口设置为始终位于其他窗口的顶部。默认值为 False。
+- **confirm_close** 是否显示窗口关闭确认对话框。默认为 False
+- **background_color** 加载 WebView 之前显示的窗口的背景颜色。指定为十六进制颜色。默认值为白色。
+- **transparent** 创建一个透明的窗口。Windows 不支持。默认值为 False。请注意，此设置不会隐藏或使窗口铬透明。将窗口 chrome setframeless 隐藏为 True。
 
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintain your own forks. [(see community maintained variation forks)](#variations)
+#### webview.start
+
+```
+webview.start(func=None, args=None, localization={}, gui=None, debug=False, http_server=False)
+```
+
+启动 GUI 循环并显示之前创建的窗口。此函数必须从主线程调用。
+
+- **func** 启动 GUI 循环时调用的函数。
+- **args** 函数参数。可以是单个值，也可以是元组值。
+- **localization** 带有本地化字符串的词典。默认字符串及其键在 localization.py 中定义
+- **gui** 强制使用特定的 GUI。允许的值是 cef、qt 或 gtk，具体取决于平台。
+- **debug** 启用调试模式。
+- **http_server** 启用内置 HTTP 服务器。如果启用，本地文件将使用随机端口上的本地 HTTP 服务器提供服务。对于每个窗口，都会生成一个单独的 HTTP 服务器。对于非本地 URL，此选项将被忽略。
+
+### 域间通信
+
+#### 从 Python 调用 Javascript
+
+window.evaluate_js(code, callback=None)允许您使用同步返回的最后一个值执行任意 Javascript 代码。如果提供了回调函数，则解析 promise，并调用回调函数，结果作为参数。Javascript 类型转换为 Python 类型，例如 JS 对象到 Python 字典，数组到列表，未定义为 None。由于实现限制，字符串“null”将被计算为 None。另外，evaluate_js 返回的值限制为 900 个字符内。
+
+#### 从 Javascript 调用 Python
+
+从 Javascript 调用 Python 函数可以通过两种不同的方法完成。
+
+- 通过将 Python 类的实例暴露给 create_window 的 js_api。该类的所有可调用方法都将以 pywebview.api.method_name 的形式公开到 JS 域中。方法名称不得以下划线开头。
+- 通过将函数传递给窗口对象的 expose(func)这将以 pywebview.api.func_name 的形式将一个或多个函数公开到 JS 域。与 JS API 不同，expose 也允许在运行时公开函数。如果 JS API 和以这种方式公开的函数之间存在名称冲突，则后者优先。
