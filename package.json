@@ -21,7 +21,7 @@
     "pre:windows": "pyinstaller --clean .\\app\\spec\\windows-pre.spec",
     "pre:folder": "shx rm -rf build && vite build && pyinstaller --clean .\\app\\spec\\windows-folder-pre.spec",
     "build": "shx rm -rf build && vite build && run-script-os",
-    "build:windows": "pyinstaller -w --clean .\\app\\spec\\windows.spec",
+    "build:windows": "pyinstaller --clean .\\app\\spec\\windows.spec",
     "build:folder": "shx rm -rf build && vite build && pyinstaller --clean .\\app\\spec\\windows-folder.spec"
   },
   "dependencies": {
